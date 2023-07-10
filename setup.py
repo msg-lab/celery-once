@@ -7,7 +7,8 @@ with open('README.rst') as f:
     readme = f.read()
 
 requirements = [
-    "celery>=5.2.0",
+    # This is here to ensure compatibility, remove if conflict with future packages
+    "celery==5.2.2",
     "redis>=2.10.2"
 ]
 
